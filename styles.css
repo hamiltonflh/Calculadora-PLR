@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.resultados-companhia, .resultados-individuais {
+    background-color: rgb(200, 255, 216);
+    border-radius: .8rem;
+    width: 120px;
+    padding: 30px;
+    margin:16px;
+}
+
+
+.resultados {
+    background-color: #e3f2fd;
+    max-width: 800px;
+    margin:auto;
+    border-radius:.8rem;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+
+.col > h5 {
+    margin-bottom: 20px;
+    font-family: 'Roboto' sans-serif;
+}
+
+.icon {
+    cursor: pointer;
+    margin-top: 16px;
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+    <title>Calculadora PLR</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" style="background-color: #e3f2fd;">
+            <div class="container">
+                <a href="https://lpht.sharepoint.com/_layouts/15/sharepoint.aspx" target="external" class="navbar-brand">
+                    <img src="Images/Logo.png" alt="logo-longping" height="50" width="100">
+                    Calculadora PLR LongPing HighTech
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="resultados">
+            <div class="container fluid text-center">
+                <div class="row">
+                    <div class="col resultados-companhia">
+                        <h5>Resultados da Companhia</h5>
+                        <form>
+                            <div class="input-group mb-2">
+                                <input type="number" class="form-control" name="company" id="icompany" placeholder="Companhia">
+                                <span class="input-group-text scompany">0%</span>
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="number" class="form-control" name="department" id="idepartament" placeholder="Resultado Departamento">
+                                <span class="input-group-text sdep">0%</span>
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="number" class="form-control" name="target" id="itarget" placeholder="Target">
+                                <span class="input-group-text starget">0%</span>
+                                <label for="itarget" class="label">
+                                    <span class="icon">&#10068;
+                                        <span class="icon-text">O target está na sua carta de contratação ou carta de promoção</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col resultados-individuais">
+                        <h5>Resultado Individual</h5>
+                        <form>
+                            <div class="input-group mb-2">  
+                                <input type="number" class="form-control" name="salario" id="isalario" placeholder="salario">
+                                <span class="input-group-text ssal">R$0,00</span>
+                            </div>
+                            <div class="input-group mb-2">                        
+                                <input type="number" class="form-control" name="meses-trabalhados" id="imeses-trabalhados" placeholder="Meses trabalhados">
+                                <span class="input-group-text smtrab">0 meses</span>
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="number"  class="form-control" name="performance" id="iperformance" placeholder="Performance Individual %">
+                                <span class="input-group-text spind">0%</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-primary mt-3 calcular">Calcular</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+<div class="modal fade" tabindex="-1" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Seu PLR Aproximado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 class="resultado-plr"></h6>
+                <p>Esse é um calculo aproximado, isso não significa que esse será o valor que você receberá ao certo, mas pode chegar próximo</p>
+                <p>O calculo é feito em cima do seu target. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</html>
